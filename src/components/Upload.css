@@ -1,0 +1,41 @@
+
+
+.Upload {
+  border: 1px solid#b7b9bc;
+  border-top: none;
+}
+
+.Upload.image {
+  border: none;
+  margin-top: 2rem;
+}
+
+.Upload.text {
+  padding: 2rem;
+}
+
+.Upload .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.Upload .choose-file {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 0;
+  text-align: center;
+  width: 175px !important;
+}
+
+.Upload .choose-file:hover {
+  background: #eee;
+}
+
+.Upload .upload-help {
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}

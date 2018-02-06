@@ -1,0 +1,16 @@
+.Form {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+  width: 50vw;
+}
+
+@media screen and (max-width: 768px) {
+  .Form {
+    left: 17vw;
+    position: absolute;
+    width: 80vw;
+  }
+}

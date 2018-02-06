@@ -1,0 +1,12 @@
+.SelectType {
+  left: 10vw;
+  position: absolute;
+  top: 18vh;
+}
+
+@media screen and (max-width: 768px) {
+  .SelectType {
+    left: 3vw;
+    top: 25vh;
+  }
+}
