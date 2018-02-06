@@ -1,0 +1,16 @@
+.ActionButton {
+  border: 1px solid #b7b9bc;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.75rem;
+  margin-top: 1rem;
+  width: 80px;
+}
+
+.ActionButton:hover {
+  background: #eee;
+}
+
+.ActionButton:disabled {
+  cursor: not-allowed;
+}

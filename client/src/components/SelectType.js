@@ -13,7 +13,7 @@ class SelectType extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      type: types[0]
+      type: this.props.type
     }
   }
 

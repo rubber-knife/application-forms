@@ -9,7 +9,7 @@ class Editor extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      value: this.props.value
+      text: ''
     }
   }
 
@@ -21,15 +21,15 @@ class Editor extends Component {
     ]
   }
 
+  handleChange = value => this.setState({ text: value })
+
   render() {
-    const {
-      value
-    } = this.state
     return (
       <div className='Editor'>
         <ReactQuill
-          value={value}
-          modules={this.modules} />
+          value={this.props.value}
+          modules={this.modules}
+          onChange={this.props.handleTextChange} />
       </div>
     )
   }

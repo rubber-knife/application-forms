@@ -18,6 +18,7 @@ class VisualArts extends Component {
             type='text'
             style={{ width: '50%' }} />
         </FormGroup>
+        <div className='separator' />
         <FormGroup>
           <ControlLabel>Medium</ControlLabel>
           <FormControl

@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
 import './Upload.css'
 
+import api from '../utils/api'
+
 class UploadText extends Component {
   constructor(props) {
     super(props)
   }
 
-  extractText = data => {
-
+  extractText = async data => {
+    const text = await api.extractText(data)
+    this.props.updateText(text.title, text.html)
   }
 
-  setFile = event => {
+  uploadFile = async event => {
     const doc = event.target.files[0]
     if(doc) {
       const formData = new FormData()
@@ -34,7 +37,7 @@ class UploadText extends Component {
           name="file"
           type="file"
           accept='.doc, .docx'
-          onChange={this.setFile} />
+          onChange={this.uploadFile} />
         <span
           className='upload-help' >
           Accepted file types: DOC, DOCX

@@ -1,10 +1,10 @@
 .FormHeader {
-  margin-bottom: 2rem;
 }
 
 .FormHeader .header {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .FormHeader .intro {
+  margin-bottom: 2rem;
 }

@@ -4,11 +4,17 @@ import './App.css'
 import Form from './components/Form'
 import SelectType from './components/SelectType'
 
+const types = {
+  prose: 'Prose',
+  poetry: 'Poetry',
+  va: 'Visual Arts'
+}
+
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      type: 'Prose'
+      type: types[this.props.location.pathname.slice(1)]
     }
   }
 
@@ -20,7 +26,7 @@ class App extends Component {
     } = this.state
     return (
       <div className='App'>
-        <SelectType updateType={this.updateType} />
+        <SelectType type={type} updateType={this.updateType} />
         <Form type={type} />
       </div>
     );

@@ -39,3 +39,9 @@
   font-size: 0.75rem;
   margin-left: 0.5rem;
 }
+
+.Upload .image-preview {
+  border: 1px solid #eee;
+  margin-top: 2rem;
+  padding: 1rem;
+}
